@@ -15,15 +15,15 @@
     <title>Calculator - Segundo Parcial</title>
 </head>
 <body>
-    <!--Empezamos con la estructura de la Calculadora-->
+    <!--Estructura de la Calculadora-->
     <form class="container-calculator">
-        <!--Sección de Pantalla-->
+        <!--colocamos seccio de Pantalla-->
         <div class="screen">
             <input type="text" class="screen-numbers" name="numbers" id="operation">
         </div><br>
 
         <h3 class="title">Cientifica</h3>
-        <!--Sección de Funciones Cientificas-->
+        <!--Colocamos seccion de Funciones Cientificas-->
         <div class="scientific">
             <div class="btn-group">
                 <input type="button" value="(" class="btn-number" onclick="numbers.value += '('">
@@ -44,9 +44,9 @@
         </div><br>
 
         <h3 class="title">Básica</h3>
-        <!--Sección de Funciones Inferiores-->
+        <!--Creamos Funciones Inferiores-->
         <div class="lower">
-            <!--Sección de Botones Numericos-->
+            <!--Creamos Botones Numericos-->
             <div class="number">
                 <div class="btn-group">
                     <input type="button" value="7" class="btn-number" onclick="numbers.value += '7'">
@@ -67,7 +67,7 @@
                 <input type="button" value="." class="btn-number" onclick="numbers.value += '.'">
             </div>
     
-            <!--Sección de Funciones Básoicas-->
+            <!--CreamosFunciones Básicas-->
             <div class="basic">
                 <div class="btn-group">
                     <input type="button" value="DEL" class="btn-del" onclick="pulsada('C')">
@@ -88,3 +88,35 @@
             </div>
         </div>
     </form>
+
+     <!--Agregamos un Modal con Bootstrap-->
+     <div class="btn-fila">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            Datos del alumno
+        </button>
+    </div>
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Datos del Alumno</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Carné: <b>0909-20-5400</b>
+                    <br>Nombre completo: <b>Mynor Ivan Aldana Marin</b>
+                    <br>Fecha y hora de finalizacion: <b>19/09/2021 - 17:35</b>
+                    <br>Nota esperada segun rendimiento: <b>16 pts.</b>
+                </p>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!--Importamos el documento JS-->
+    <script src="calculator.js"></script>
+</body>
+</html>
