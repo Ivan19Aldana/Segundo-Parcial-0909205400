@@ -5,7 +5,7 @@ body, html{
 }
 
 body{
-    padding: 20px;
+    padding: 25px;
     margin: 0;
     background-color: rgb(82, 82, 82);
 }
@@ -16,9 +16,9 @@ body{
     margin: 0 auto;
     padding: 30px;
     width: 35%;
-    height: 98%;
+    height: 95%;
     background-color: rgb(28, 31, 31);
-    box-shadow: 2px 1px 29px 6px;
+    box-shadow: 3px 2px 29px 6px;
 }
 
 .screen{
@@ -28,7 +28,7 @@ body{
 .screen-numbers{
     background: rgb(62, 68, 68, 0);
     color: rgb(255, 255, 255);
-    padding: .7em;
+    padding: .7px;
     width: 95%;
     height: 40px;
     font-size: 1.2em;
@@ -50,12 +50,12 @@ body{
 
 .number{
     text-align: center;
-    margin: 10px;
+    margin: 8px;
 }
 
 .basic{
     text-align: center;
-    margin: 10px;
+    margin: 15px;
 }
 
 /*Titulos*/
@@ -98,18 +98,18 @@ body{
 }
 
 .btn-equal{
-    padding: 5px;
+    padding: 10px;
     color: rgb(255, 246, 250);
     background: transparent;
     border: 2px solid rgb(255, 98, 182);
-    border-radius: 5px;
-    width: 180px;
-    height: 50px;
-    margin: 3px;
+    border-radius: 7px;
+    width: 185px;
+    height: 55px;
+    margin: 4px;
 }
 
 .btn-fila{
-    height: 10%;
+    height: 15%;
     display: flex;
     flex-direction: row;
     justify-content: center;
